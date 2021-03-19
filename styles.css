@@ -1,0 +1,131 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#grid-containter {
+    padding: 16px;
+    display: grid;
+    row-gap: 16px;
+    column-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 100px 100px 200px 200px 100px 100px 100px 50px;
+    grid-template-areas:    "three three three three"
+                            "one one two two"
+                            "four four five five"
+                            "fourteen fourteen fourteen fourteen"
+                            "fifteen fifteen fifteen fifteen"
+                            "six six seven seven"
+                            "eight eight nine nine"
+                            "ten eleven twelve thirteen"
+                            "sixteen sixteen sixteen sixteen"
+
+;
+}
+
+@media screen and (min-width: 576px) {
+    #grid-containter {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px 200px 150px 250px 50px;
+        grid-template-areas: "one three three four"
+                            "two three three five"
+                            "six seven eight nine"
+                            "ten eleven twelve thirteen"
+                            "fourteen fourteen fifteen fifteen"
+                            "sixteen sixteen sixteen sixteen"
+    ;
+    }
+
+}
+
+.grid-item {
+    padding: 8px;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+#grid-one {
+    background-color: #7400b8;
+    grid-area: one;
+}
+
+#grid-two {
+    background-color: #6930c3;
+    grid-area: two;
+}
+
+#grid-three {
+    background-color: #5e60ce;
+    grid-area: three;
+}
+
+#grid-four {
+    background-color: #5390d9;
+    grid-area: four;
+}
+
+#grid-five {
+    background-color: #4ea8de;
+    grid-area: five;
+}
+
+#grid-six {
+    background-color: #48bfe3;
+    grid-area: six;
+}
+
+#grid-seven {
+    background-color: #56cfe1;
+    grid-area: seven;
+}
+
+#grid-eight {
+    background-color: #64dfdf;
+    grid-area: eight;
+}
+
+#grid-nine {
+    background-color: #72efdd;
+    grid-area: nine;
+}
+
+#grid-ten {
+    background-color: #7400b8;
+    grid-area: ten;
+}
+
+#grid-eleven {
+    background-color: #6930c3;
+    grid-area: eleven;
+}
+
+#grid-twelve {
+    background-color: #5e60ce;
+    grid-area: twelve;
+}
+
+#grid-thirteen {
+    background-color: #4ea8de;
+    grid-area: thirteen;
+}
+
+#grid-fourteen {
+    background-color: #5390d9;
+    grid-area: fourteen;
+}
+
+#grid-fifteen {
+    background-color: #48bfe3;
+    grid-area: fifteen;
+}
+
+#grid-sixteen {
+    background-color: #56cfe1;
+    grid-area: sixteen;
+}
